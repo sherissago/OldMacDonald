@@ -1,16 +1,19 @@
-class Farm 
-{     
-   private Animal[] aunchofAnimals = new Animal[3];
-   public Farm()
-   {
-      aBunchOfAnimals[0] = new Cow("cow","moo");
-      aBunchOfAnimals[1] = new Chick("chick","peep");
-      aBunchOfAnimals[2] = new Pig("pig","oink");
-   }
-   
-   pulic void animalSounds()
-      for(int nI = 0; nI < aBunchOfAnimals.length; nI++)
-      {
-         System.out.println(aBunchOfAnimals.getType() +" goes " +aBunchOfAnimals.getSound)
-      }
+class Farm
+{
+  private Animal[] aBunchOfAnimals = new Animal[3];
+  public Farm()
+  {
+    aBunchOfAnimals[0] = new Cow("cow", "moo");
+    aBunchOfAnimals[1] = new Pig("pig", "oink");
+    aBunchOfAnimals[2] = new Chick("chick", "cluck");
+  }
+  
+  public void animalSounds()
+  {
+    for (int nI = 0; nI < aBunchOfAnimals.length; nI++)
+    {
+      System.out.println(aBunchOfAnimals[nI].getType() +" goes " + aBunchOfAnimals[nI].getSound());
+    }
+    //System.out.println("The cow is known as " + ((NamedCow)aBunchOfAnimals[0]).getName());
+  }
 }
